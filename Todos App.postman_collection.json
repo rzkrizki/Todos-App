@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "d9d21846-bf45-4fe0-9136-057d52c8f9d7",
+		"name": "Todos App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40888489"
+	},
+	"item": [
+		{
+			"name": "Post Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Ramadhan\",\r\n    \"is_project\": 1,\r\n    \"self_capture\": 1,\r\n    \"client_prefix\": \"okz\",\r\n    \"client_logo\": \"okz.jpg\",\r\n    \"address\": \"Jakarta\",\r\n    \"phone_number\": 12346789,\r\n    \"city\": \"Jakarta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todos-app.docker/client",
+					"protocol": "https",
+					"host": [
+						"todos-app",
+						"docker"
+					],
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updated Client",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Rizkii\",\r\n    \"is_project\": 1,\r\n    \"self_capture\": 1,\r\n    \"client_prefix\": \"okz\",\r\n    \"client_logo\": \"okz.jpg\",\r\n    \"address\": \"Jakarta\",\r\n    \"phone_number\": 12346789,\r\n    \"city\": \"Jakarta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todos-app.docker/client/rizki",
+					"protocol": "https",
+					"host": [
+						"todos-app",
+						"docker"
+					],
+					"path": [
+						"client",
+						"rizki"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Client",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Rizki\",\r\n    \"is_project\": 1,\r\n    \"self_capture\": 1,\r\n    \"client_prefix\": \"okz\",\r\n    \"client_logo\": \"okz.jpg\",\r\n    \"address\": \"Jakarta\",\r\n    \"phone_number\": 12346789,\r\n    \"city\": \"Jakarta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todos-app.docker/client/rizkii",
+					"protocol": "https",
+					"host": [
+						"todos-app",
+						"docker"
+					],
+					"path": [
+						"client",
+						"rizkii"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Client",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Rizki\",\r\n    \"is_project\": 1,\r\n    \"self_capture\": 1,\r\n    \"client_prefix\": \"okz\",\r\n    \"client_logo\": \"okz.jpg\",\r\n    \"address\": \"Jakarta\",\r\n    \"phone_number\": 12346789,\r\n    \"city\": \"Jakarta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todos-app.docker/client/rizkii",
+					"protocol": "https",
+					"host": [
+						"todos-app",
+						"docker"
+					],
+					"path": [
+						"client",
+						"rizkii"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
